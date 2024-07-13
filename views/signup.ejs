@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <%- include('partials/header')%>   
+    <div class="hero">
+        <h2>SignUp</h2>
+        <h5>Welcome to Website</h5>
+        <form action="/signup/register" method="post">
+            <!-- <label for="name">Name : </label> -->
+            <input type="text" name="name" placeholder="Name" required>
+            <br>
+            <!-- <label for="age">Age : </label> -->
+            <input type="number" name="age" placeholder="Age">
+            <br>
+            <!-- <label for="mobile" >Mob Number : </label> -->
+            <input type="number" name="mobile" placeholder="Phone Number" required >
+            <br>
+            <!-- <label for="email">Email Id : </label> -->
+            <input type="email" name="email" placeholder="Email Id">
+            <br>
+            <!-- <label for="password">Password</label> -->
+            <input type="password" name="password" placeholder="Password" minlength="8" required>
+            <br>
+            <button type="submit">SignUp</button>
+
+            <h5>Already have account ? <a href="/login">Login</a></h5>
+
+        </form>
+    </div>
+</body>
+</html>

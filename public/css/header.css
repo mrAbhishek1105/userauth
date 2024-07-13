@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 1px;
+}
+header{
+    display: flex;
+    /* width: 100%; */
+    /* margin: 5px; */
+    background-color: antiquewhite;
+    height: fit-content;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+
+}
+.logo{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+nav{
+    padding: 10px;
+}
+
+nav a{
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}

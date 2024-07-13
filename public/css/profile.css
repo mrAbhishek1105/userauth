@@ -1,0 +1,98 @@
+/* Reset some basic elements for consistency across browsers */
+body, h1, h2, p, form, label, input, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background: #343a40;
+    padding: 20px;
+    width: 250px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+}
+
+.sidebar button {
+    background: #dc3545;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+    background: #c82333;
+}
+
+/* Main content styles */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-content p {
+    color: #495057;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-content h1, .main-content p {
+        font-size: 16px;
+    }
+}
